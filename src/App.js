@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Button, Grid, Typography, makeStyles, Paper } from '@material-ui/core';
+import { Box, Container, Typography } from '@material-ui/core';
 import './App.css';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Header from './Components/Header';

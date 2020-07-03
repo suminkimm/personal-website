@@ -34,10 +34,10 @@ function Header() {
                         spacing={24}
                     >
                         {/* <Button style={{fontSize: 20}} size="large"><strong>SU MIN KIM</strong></Button> */}
-                        <a href="App.js#Main" className={classes.hyperlinks}><strong>SU MIN KIM</strong></a>
+                        <a href="index.html#Main" className={classes.hyperlinks}><strong>SU MIN KIM</strong></a>
                         <Grid item>
-                            <a href="App.js#Projects" className={classes.hyperlinks}>Projects</a>
-                            <a href="App.js#About" className={classes.rightHyperlinks}>About</a>
+                            <a href="index.html#Projects" className={classes.hyperlinks}>Projects</a>
+                            <a href="index.html#About" className={classes.rightHyperlinks}>About</a>
                         </Grid>
                     </Grid>
                 </Toolbar>
