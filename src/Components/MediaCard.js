@@ -1,6 +1,10 @@
 import React from 'react';
 import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography, makeStyles, Button } from '@material-ui/core';
 
+import Bloom from '../assets/Bloom.png'
+import socialTrackerMainPic from '../assets/socialTrackerMainPic.png'
+import RecipeBook from '../assets/RecipeBook.png'
+
 const useStyles = makeStyles({
     root: {
       width: 390,
@@ -10,16 +14,21 @@ const useStyles = makeStyles({
     },
 });
 
-function MediaCard({title, body, image}) {
+function MediaCard({title, body, image, codeURL, modalOpen, isVideo, demo}) {
 
     const classes = useStyles();
 
     return (
         <Card className={classes.root}>
-            <CardActionArea>
+            {/* <CardActionArea onClick={() => {}}> */}
                 <CardMedia
                     className={classes.media}
-                    image={image}
+                    image={
+                        image == "Bloom" ? Bloom 
+                        : image == "socialTrackerMainPic" ? socialTrackerMainPic
+                        : image == "RecipeBook" ? RecipeBook
+                        : ""
+                    }
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
@@ -29,10 +38,20 @@ function MediaCard({title, body, image}) {
                         {body}
                     </Typography>
                 </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button size="small" color="primary">
+            {/* </CardActionArea> */}
+            <CardActions style={{ display: "flex", justifyContent: "space-between" }}>
+                <Button size="small" color="primary" onClick={() => window.location.href=codeURL}>
                 View Code
+                </Button>
+                <Button size="small" color="primary" onClick={() => {
+                        if (isVideo) {
+                            modalOpen(true, demo)
+                        } else {
+                            window.location.href=demo
+                        }
+                    }}
+                >
+                View Demo
                 </Button>
             </CardActions>
         </Card>
