@@ -4,6 +4,7 @@ import { Card, CardActionArea, CardActions, CardContent, CardMedia, Typography, 
 import Bloom from '../assets/Bloom.png'
 import socialTrackerMainPic from '../assets/socialTrackerMainPic.png'
 import RecipeBook from '../assets/RecipeBook.png'
+import Emotinews from '../assets/Emotinews.png'
 
 const useStyles = makeStyles({
     root: {
@@ -27,6 +28,7 @@ function MediaCard({title, body, image, codeURL, modalOpen, isVideo, demo}) {
                         image == "Bloom" ? Bloom 
                         : image == "socialTrackerMainPic" ? socialTrackerMainPic
                         : image == "RecipeBook" ? RecipeBook
+                        : image == "Emotinews" ? Emotinews
                         : ""
                     }
                 />

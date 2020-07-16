@@ -32,13 +32,21 @@ function Projects() {
             demo: "pHk3TvWhmfA"
         },
         {
+            title: "Emotinews",
+            body: "A Swift mobile application that allows the user to search for a topic to see others' opinions on it using the Twitter Sentiment Dataset, and also allows the user to read more news articles about it.",
+            image: "Emotinews",
+            codeURL: "https://github.com/suminkimm/Emotinews",
+            isVideo: true,
+            demo: "Lv3cRtqh5Qg"
+        },
+        {
             title: "The Recipe Book",
             body: "A PHP web app that allows users to create and share their favorite recipes with an online community.",
             image: "RecipeBook",
             codeURL: "https://github.com/suminkimm/TheRecipeBook",
             isVideo: false,
             demo: "http://suminkimm.com/TheRecipeBook/index.php"
-        }
+        },
     ]
 
     return (
