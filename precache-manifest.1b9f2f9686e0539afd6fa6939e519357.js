@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "480e5aaac5226efd5c155c767192c6b1",
+    "revision": "08328c468f7fff61a6495e98ed320e83",
     "url": "/personal-website/index.html"
   },
   {
-    "revision": "d6fd6abf9174bcb5e742",
+    "revision": "e28759c05cca1faee315",
     "url": "/personal-website/static/css/2.7550f3b0.chunk.css"
   },
   {
-    "revision": "37958ca50c8552bb1f67",
+    "revision": "f307805eb00333dbe4f1",
     "url": "/personal-website/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "d6fd6abf9174bcb5e742",
-    "url": "/personal-website/static/js/2.a1ced63b.chunk.js"
+    "revision": "e28759c05cca1faee315",
+    "url": "/personal-website/static/js/2.8120e4f1.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/personal-website/static/js/2.a1ced63b.chunk.js.LICENSE.txt"
+    "url": "/personal-website/static/js/2.8120e4f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37958ca50c8552bb1f67",
-    "url": "/personal-website/static/js/main.16d1f027.chunk.js"
+    "revision": "f307805eb00333dbe4f1",
+    "url": "/personal-website/static/js/main.06da2348.chunk.js"
   },
   {
     "revision": "d9385b05e5e57d9628fe",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "aace551cf8349b611358ddf64f53c0c9",
     "url": "/personal-website/static/media/RecipeBook.aace551c.png"
+  },
+  {
+    "revision": "f7026146c23051502ce50a549e9850df",
+    "url": "/personal-website/static/media/Su Min Kim Resume.f7026146.pdf"
   },
   {
     "revision": "e5f22853e6d82186b15e73199b16e709",
