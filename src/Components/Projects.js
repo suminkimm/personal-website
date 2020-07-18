@@ -17,7 +17,7 @@ function Projects() {
     const projectsArray = [
         {
             title: "SocialTracker",
-            body: "A React Native mobile app that allows the user to monitor his/her social time and social circle.",
+            body: "A React Native mobile application that allows the user to monitor his/her social time and social circle.",
             image: "socialTrackerMainPic",
             codeURL: "https://github.com/suminkimm/socialTrackerPublicApp",
             isVideo: true,
@@ -41,7 +41,7 @@ function Projects() {
         },
         {
             title: "The Recipe Book",
-            body: "A PHP web app that allows users to create and share their favorite recipes with an online community.",
+            body: "A PHP web application that allows users to create and share their favorite recipes with an online community.",
             image: "RecipeBook",
             codeURL: "https://github.com/suminkimm/TheRecipeBook",
             isVideo: false,

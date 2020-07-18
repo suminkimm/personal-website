@@ -1,22 +1,33 @@
 
 import React from 'react';
-import { AppBar, Toolbar, Button, Grid, makeStyles } from '@material-ui/core';
+import { AppBar, Toolbar, Grid, makeStyles } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
+import { Link, animateScroll as scroll } from "react-scroll";
+import Resume from '../assets/Su Min Kim Resume.pdf';
 
 const useStyles = makeStyles({
     hyperlinks: {
         fontSize: 20, 
         textDecoration: "none", 
         color: "black", 
-        paddingTop: 10, 
+        paddingTop: 10,
+        '&:hover': {
+            color: "#3dace3"
+        },
+        cursor: "pointer"
     },
     rightHyperlinks: {
         fontSize: 20, 
         textDecoration: "none", 
         color: "black", 
         paddingTop: 10, 
-        paddingLeft: 15
-    }
+        paddingLeft: 20,
+        '&:hover': {
+            color: "#3dace3"
+        },
+        cursor: "pointer"
+    },
+    
 }); 
 
 
@@ -33,11 +44,12 @@ function Header() {
                         container 
                         spacing={24}
                     >
-                        {/* <Button style={{fontSize: 20}} size="large"><strong>SU MIN KIM</strong></Button> */}
-                        <a href="index.html#Main" className={classes.hyperlinks}><strong>SU MIN KIM</strong></a>
+                        <a onClick={() => scroll.scrollToTop(500)} className={classes.hyperlinks}><strong>SU MIN KIM</strong></a>
+                        
                         <Grid item>
-                            <a href="index.html#Projects" className={classes.hyperlinks}>Projects</a>
-                            <a href="index.html#About" className={classes.rightHyperlinks}>About</a>
+                            <Link activeClass="active" to="Projects" spy={true} smooth={true} duration={500}><a className={classes.hyperlinks}>Projects</a></Link>
+                            <Link activeClass="active" to="About" spy={true} smooth={true} duration={500}><a className={classes.rightHyperlinks}>About</a></Link>
+                            <a href={Resume} download className={classes.rightHyperlinks}>Resume</a>
                         </Grid>
                     </Grid>
                 </Toolbar>

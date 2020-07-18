@@ -19,13 +19,13 @@ function About() {
           </Box>
 
           <Box fontWeight="fontWeightLight" fontSize="h5.fontSize" mt={2}>
-            As the Design Director of <span style={{color: '#cc0033'}}>HackRU</span> (our biannual hackathon) 
+            As the Design Director of <span style={{color: '#cc0033'}}>HackRU</span> (our school's biannual hackathon) 
             and the Vice President of the <span style={{color: '#cc0033'}}>RU Mobile App Development Club</span>, 
             I've gotten the awesome chance to help students foster their own love for coding.
           </Box>
 
           <Box fontWeight="fontWeightLight" fontSize="h5.fontSize" mt={2}>
-            But aside from coding, my other interests include: 🏃‍♀️ 🎸 🎨  🍣
+            But aside from coding, my other interests include: <span>🏃‍♀️ 🎸 🎨  🍣</span>
           </Box>
         </Container>
     )
